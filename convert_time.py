@@ -9,6 +9,6 @@ def convert_time(x):
     return ' '.join([Ymd, HMS])
 
 # 데이터 불러오기
-train_data = pd.read_csv('data/energy.csv')
+train_data = pd.read_csv('https://raw.githubusercontent.com/cjfghk5697/forecastsolar/main/csv%20file/energy.csv') #energy.csv
 # 시간 변환
 train_data['time'] = train_data['time'].apply(lambda x:convert_time(x))
